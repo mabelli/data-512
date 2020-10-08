@@ -1,6 +1,7 @@
 # DATA 512: Human Centered Data Science - A1: Data Curation
 
-The goal of this repository is to gather, process, and analyze monthly Wikipedia traffic from Janurary 2008 to August 2020.
+The purpose of this repository is to implement a analysis project that is fully reproducible by others. <br />
+The goal of this repository is to construct and analyze a dataset of monthly Wikipedia traffic from January 2008 to August 2020.
 
 ## License
 Source data is available under the [MIT Licence](LICENSE). <br />
