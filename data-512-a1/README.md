@@ -13,7 +13,7 @@ The data comes from two API endpoints:
 
 ## CSV File Fields Description
 | Column                  | Description                                           |
-| ------------------------|:-----------------------------------------------------:|
+| :-----------------------|:------------------------------------------------------|
 | year                    | Year of the data                                      |
 | month                   | Month of the data                                     |
 | pagecount_all_views     | Monthly total pageviews from Legacy API               |
