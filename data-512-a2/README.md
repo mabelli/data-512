@@ -1,32 +1,20 @@
-# DATA 512: Human Centered Data Science - A1: Data Curation
+# DATA 512: Human Centered Data Science - A2: Bias in data
 
-The goal of this repository is to gather, process, and analyze monthly Wikipedia traffic from Janurary 2008 to August 2020.
+The goal of this repository is to identify potential bias in multiple datasets of hostile speech used by Wikimedia Research and Jigsaw for research and describe implications of those biases.
+
+## Datasets
+The data that I focus on contains online discussion posts made by Wikipedia editors. Crowdworkers labelled these posts for three kinds of hostile speech: “toxicity”, “aggression”, and “personal attacks”. <br \>
+The datasets that I analyzed include information about the discussion posts, crowdworkers labels on those posts, and crowdworkers' demographics.
+They are accessiable [here](https://figshare.com/projects/Wikipedia_Talk/16731).
+
+## Background
+Google data scientists used these annotated datasets to train machine learning models as part of a project called Conversation AI. The models have been used in a variety of software products and made freely accessible to anyone through the Perspective API.
+An overview of the research project is [here](https://meta.wikimedia.org/wiki/Research:Detox).
+The github page for the Perspective API is available [here](https://github.com/conversationai/perspectiveapi/blob/master/2-api/methods.md).
+
 
 ## License
-Source data is available under the [MIT Licence](LICENSE). <br />
-Wikimedia API [Terms of Use](https://www.mediawiki.org/wiki/REST_API#Terms_and_conditions).
-
-## API Documentation
-The data comes from two API endpoints:
-1. The Legacy Pagecounts API (collect monthly desktop and mobile traffic data from Janurary 2008 through July 2016). [Documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Legacy_Pagecounts)
-2. The Pageviews API (collect monthly desktop, mobile web, and mobile app traffic data from July 2015 through August 2020). [Documentation](https://wikitech.wikimedia.org/wiki/Analytics/AQS/Pageviews)
-
-## CSV File Fields Description
-| Column                  | Description                                           |
-| :-----------------------|:------------------------------------------------------|
-| year                    | Year of the data                                      |
-| month                   | Month of the data                                     |
-| pagecount_all_views     | Monthly total pageviews from Legacy API               |
-| pagecount_desktop_views | Monthly desktop pageviews from Legacy API             |
-| pagecount_mobile_views  | Monthly mobile pageviews from Legacy API              |
-| pageview_all_views      | Monthly total pageviews from Pageviews API            |
-| pageview_desktop_views  | Monthly desktop pageviews from Pageviews API          |
-| pageview_mobile_views   | Monthly mobile (web+app) pageviews from Pageviews API |
-
-## Note & Considerations
-Pageview API endpoint has an option to filter user traffic from traffic by web crawlers or spiders, while the Legacy Pagecounts API does not.
-Thus, the data from Pageview API only includes user traffic, while the data from Legacy Pagecounts API include traffic from user, web crawlers, and spiders.
-
+Source data is available under the [MIT Licence](LICENSE).
 
 
 
